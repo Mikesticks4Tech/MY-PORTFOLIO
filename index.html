@@ -27,7 +27,6 @@
         --display: "Syne", sans-serif;
         --body: "Inter", sans-serif;
       }
-
       *,
       *::before,
       *::after {
@@ -35,11 +34,9 @@
         margin: 0;
         padding: 0;
       }
-
       html {
         scroll-behavior: smooth;
       }
-
       body {
         background: var(--bg);
         color: var(--text);
@@ -49,8 +46,6 @@
         overflow-x: hidden;
         cursor: none;
       }
-
-      /* Custom cursor */
       .cursor {
         position: fixed;
         top: 0;
@@ -95,8 +90,6 @@
         height: 52px;
         border-color: rgba(56, 189, 248, 0.35);
       }
-
-      /* Noise overlay */
       body::before {
         content: "";
         position: fixed;
@@ -106,8 +99,6 @@
         pointer-events: none;
         opacity: 0.4;
       }
-
-      /* Glow blobs */
       .blob {
         position: fixed;
         border-radius: 50%;
@@ -136,8 +127,6 @@
         left: 50%;
         background: rgba(244, 114, 182, 0.03);
       }
-
-      /* NAV */
       nav {
         position: fixed;
         top: 0;
@@ -189,14 +178,10 @@
         background: var(--accent);
         color: var(--bg);
       }
-
-      /* SECTIONS */
       section {
         position: relative;
         z-index: 1;
       }
-
-      /* HERO */
       #hero {
         min-height: 100vh;
         display: flex;
@@ -338,8 +323,6 @@
         letter-spacing: 0.08em;
         text-transform: uppercase;
       }
-
-      /* Scroll indicator */
       .scroll-hint {
         position: absolute;
         bottom: 40px;
@@ -363,8 +346,6 @@
           transform: translateY(6px);
         }
       }
-
-      /* SECTION SHARED */
       .section-wrap {
         max-width: 1100px;
         margin: 0 auto;
@@ -392,8 +373,6 @@
         margin-bottom: 56px;
         line-height: 1.1;
       }
-
-      /* ABOUT */
       .about-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -451,8 +430,6 @@
         color: var(--muted);
         margin-top: 2px;
       }
-
-      /* PROJECTS */
       .projects-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -603,8 +580,6 @@
         font-weight: 700;
         letter-spacing: 0.08em;
       }
-
-      /* SKILLS */
       .skills-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -672,8 +647,6 @@
         background: linear-gradient(90deg, var(--accent), var(--accent2));
         transition: width 1s ease;
       }
-
-      /* CONTACT */
       #contact {
         background: var(--bg2);
       }
@@ -711,7 +684,6 @@
         text-decoration: none;
         color: var(--muted2);
         font-size: 14px;
-        transition: color 0.2s;
         padding: 14px 16px;
         border: 1px solid var(--border);
         border-radius: 8px;
@@ -750,8 +722,6 @@
         font-size: 13.5px;
         color: var(--text);
       }
-
-      /* Form */
       .contact-form {
         display: flex;
         flex-direction: column;
@@ -812,8 +782,6 @@
         transform: translateY(-2px);
         box-shadow: 0 8px 24px rgba(99, 234, 170, 0.25);
       }
-
-      /* FOOTER */
       footer {
         border-top: 1px solid var(--border);
         padding: 28px 60px;
@@ -837,8 +805,6 @@
         color: var(--muted);
         letter-spacing: 0.06em;
       }
-
-      /* Animations */
       .reveal {
         opacity: 0;
         transform: translateY(30px);
@@ -850,8 +816,6 @@
         opacity: 1;
         transform: translateY(0);
       }
-
-      /* Mobile */
       @media (max-width: 768px) {
         nav {
           padding: 16px 24px;
@@ -913,12 +877,10 @@
   <body>
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
-
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
 
-    <!-- NAV -->
     <nav>
       <div class="nav-logo">
         IM_DEV<span style="color: var(--muted)">://</span>
@@ -932,7 +894,6 @@
       <a href="mailto:idowumichael900@gmail.com" class="nav-cta">Hire Me →</a>
     </nav>
 
-    <!-- HERO -->
     <section id="hero">
       <div
         style="
@@ -948,12 +909,14 @@
         </div>
         <h1 class="hero-name">Idowu<br /><span>Michael.</span></h1>
         <p class="hero-title">
-          Full Stack Developer <span>// React · Node.js · MongoDB · AI</span>
+          Full Stack Developer
+          <span>// React · Node.js · MongoDB · Paystack</span>
         </p>
         <p class="hero-desc">
           I build modern, production-ready web applications that solve real
-          problems. From sleek e-commerce experiences to AI-powered fintech
-          dashboards — I write code that works and ships fast.
+          problems. From food delivery platforms with geolocation maps to
+          AI-powered fintech dashboards — I write code that works and ships
+          fast.
         </p>
         <div class="hero-btns">
           <a href="#projects" class="btn-primary">View my work →</a>
@@ -961,8 +924,8 @@
         </div>
         <div class="hero-stats">
           <div class="stat-item">
-            <span class="stat-num">2+</span>
-            <span class="stat-label">Projects shipped</span>
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Projects live</span>
           </div>
           <div class="stat-item">
             <span class="stat-num">AI</span>
@@ -981,7 +944,6 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about">
       <div class="section-wrap">
         <div class="section-tag">About me</div>
@@ -998,16 +960,17 @@
             <p>
               My journey has been hands-on from day one. I didn't wait for the
               perfect course or the perfect moment — I started building. From my
-              first gadget store to an
-              <strong>AI-powered fintech dashboard</strong> with real
-              authentication, live charts, and Claude AI baked in — every
-              project taught me something a tutorial never could.
+              first gadget store to a
+              <strong>food delivery app with real geolocation maps</strong> and
+              Paystack payment integration — every project taught me something a
+              tutorial never could.
             </p>
             <p>
-              My mentor challenged me to go beyond what's comfortable, and I did
-              exactly that. I'm not just learning the stack — I'm learning to
-              <strong>think like an engineer</strong>: how to structure systems,
-              solve real user problems, and ship clean code under pressure.
+              I've shipped live products including Chopfast (a full stack food
+              delivery platform with interactive maps), a Gadget Store, a
+              Fintech app and an AI-powered finance tracker. I'm not just
+              learning the stack — I'm learning to
+              <strong>think like an engineer</strong>.
             </p>
             <p>
               I'm actively seeking
@@ -1025,7 +988,9 @@
             <div class="about-card">
               <div class="about-card-label">Specialty</div>
               <div class="about-card-val">Full Stack Development</div>
-              <div class="about-card-sub">React · Node.js · MongoDB · AI</div>
+              <div class="about-card-sub">
+                React · Node.js · MongoDB · Paystack
+              </div>
             </div>
             <div class="about-card">
               <div class="about-card-label">Focus Areas</div>
@@ -1049,19 +1014,17 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" style="background: var(--bg2)">
       <div class="section-wrap">
         <div class="section-tag">Projects</div>
         <h2 class="section-title">Things I've<br />built & shipped.</h2>
-
         <div class="projects-grid">
-          <!-- Featured: FinTrack -->
+          <!-- Featured: Chopfast -->
           <div class="project-card featured reveal">
             <div class="project-img">
               <div class="project-img-grid"></div>
               <div class="project-img-inner">
-                <div class="project-img-icon">💰</div>
+                <div class="project-img-icon">🍔</div>
                 <span
                   style="
                     font-size: 11px;
@@ -1069,44 +1032,48 @@
                     color: var(--accent);
                     opacity: 0.8;
                   "
-                  >FINTRACK DASHBOARD</span
+                  >FOOD DELIVERY · LIVE</span
                 >
               </div>
             </div>
             <div class="project-body">
               <span class="project-number">01 // Featured</span>
-              <h3 class="project-name">FinTrack — AI Finance Dashboard</h3>
+              <h3 class="project-name">Chopfast — Food Delivery Platform</h3>
               <p class="project-desc">
-                A full-stack personal finance tracker with AI-powered insights.
-                Users log income and expenses, visualise their data through live
-                Area, Bar & Pie charts, and get personalised financial advice
-                from Claude AI. Built with protected auth routes, real form
-                validation, and Nigerian ₦ support.
+                A full stack food delivery web app for Lagos. Features real-time
+                geolocation with interactive Leaflet.js maps, restaurant
+                markers, dynamic location detection, Paystack payment
+                integration (card, bank transfer, USSD), user authentication,
+                cart management and order tracking.
               </p>
               <div class="project-tags">
                 <span class="tag green">React</span>
                 <span class="tag green">TypeScript</span>
-                <span class="tag blue">Recharts</span>
                 <span class="tag blue">Node.js</span>
-                <span class="tag pink">Claude AI</span>
-                <span class="tag">MongoDB</span>
+                <span class="tag blue">MongoDB</span>
+                <span class="tag pink">Paystack</span>
+                <span class="tag">Leaflet.js</span>
                 <span class="tag">JWT Auth</span>
               </div>
               <div class="project-links">
                 <a
-                  href="https://github.com/Mikesticks4tech"
+                  href="https://github.com/Mikesticks4Tech"
                   target="_blank"
                   class="project-link"
+                  >↗ GitHub</a
                 >
-                  ↗ GitHub
-                </a>
-                <a href="#" class="project-link">⬡ Live Demo</a>
+                <a
+                  href="https://chopfast.vercel.app"
+                  target="_blank"
+                  class="project-link"
+                  >⬡ Live Demo</a
+                >
               </div>
             </div>
-            <div class="badge-new">NEW</div>
+            <div class="badge-new">LIVE</div>
           </div>
 
-          <!-- GadgetHub -->
+          <!-- Gadget Store -->
           <div class="project-card reveal">
             <div class="project-img" style="height: 200px">
               <div class="project-img-grid"></div>
@@ -1119,77 +1086,142 @@
                     color: var(--accent2);
                     opacity: 0.8;
                   "
-                  >E-COMMERCE</span
+                  >E-COMMERCE · LIVE</span
                 >
               </div>
             </div>
             <div class="project-body">
               <span class="project-number">02</span>
-              <h3 class="project-name">$tick$ GadgetHub</h3>
+              <h3 class="project-name">Gadget Store — Ecommerce Platform</h3>
               <p class="project-desc">
-                A full-featured gadget store with live search, category filters,
-                product modals, wishlist, and a 3-step checkout flow. Built with
-                TypeScript and a clean dark UI.
+                A full featured gadget ecommerce store with product listings,
+                live search, category filters, cart management, checkout flow
+                and user authentication. Clean dark UI with smooth interactions.
               </p>
               <div class="project-tags">
                 <span class="tag green">React</span>
                 <span class="tag green">TypeScript</span>
-                <span class="tag blue">Context API</span>
-                <span class="tag">Tailwind CSS</span>
+                <span class="tag blue">Node.js</span>
+                <span class="tag">MongoDB</span>
               </div>
               <div class="project-links">
                 <a
-                  href="https://github.com/Mikesticks4tech"
+                  href="https://github.com/Mikesticks4Tech"
                   target="_blank"
                   class="project-link"
                   >↗ GitHub</a
                 >
-                <a href="#" class="project-link">⬡ Live Demo</a>
+                <a
+                  href="https://gadget-store-app-topaz.vercel.app"
+                  target="_blank"
+                  class="project-link"
+                  >⬡ Live Demo</a
+                >
               </div>
             </div>
           </div>
 
-          <!-- Coming soon -->
-          <div
-            class="project-card reveal"
-            style="
-              border-style: dashed;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              min-height: 280px;
-            "
-          >
-            <div style="text-align: center; padding: 32px">
-              <div style="font-size: 36px; margin-bottom: 12px; opacity: 0.3">
-                ⚡
+          <!-- Fintech App -->
+          <div class="project-card reveal">
+            <div class="project-img" style="height: 200px">
+              <div class="project-img-grid"></div>
+              <div class="project-img-inner">
+                <div class="project-img-icon">💳</div>
+                <span
+                  style="
+                    font-size: 11px;
+                    letter-spacing: 0.06em;
+                    color: var(--accent3);
+                    opacity: 0.8;
+                  "
+                  >FINTECH · LIVE</span
+                >
               </div>
-              <p
-                style="
-                  font-family: var(--mono);
-                  font-size: 11px;
-                  color: var(--muted);
-                  letter-spacing: 0.1em;
-                  text-transform: uppercase;
-                "
-              >
-                Next project
+            </div>
+            <div class="project-body">
+              <span class="project-number">03</span>
+              <h3 class="project-name">Fintech — Financial Services App</h3>
+              <p class="project-desc">
+                A modern fintech web application with user authentication,
+                financial dashboard and data management. Built with a clean
+                professional UI optimised for financial services.
               </p>
-              <p style="font-size: 13px; color: var(--muted); margin-top: 6px">
-                Coming soon...
+              <div class="project-tags">
+                <span class="tag green">React</span>
+                <span class="tag blue">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">JWT Auth</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Mikesticks4Tech"
+                  target="_blank"
+                  class="project-link"
+                  >↗ GitHub</a
+                >
+                <a
+                  href="https://fintech-frontend-khaki-two.vercel.app"
+                  target="_blank"
+                  class="project-link"
+                  >⬡ Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- FinTrack -->
+          <div class="project-card reveal">
+            <div class="project-img" style="height: 200px">
+              <div class="project-img-grid"></div>
+              <div class="project-img-inner">
+                <div class="project-img-icon">💰</div>
+                <span
+                  style="
+                    font-size: 11px;
+                    letter-spacing: 0.06em;
+                    color: var(--accent);
+                    opacity: 0.8;
+                  "
+                  >FINANCE TRACKER</span
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-number">04</span>
+              <h3 class="project-name">FinTrack — AI Finance Dashboard</h3>
+              <p class="project-desc">
+                A personal finance tracker with AI-powered insights from Claude
+                AI. Users log income and expenses, visualise data through live
+                charts and get personalised financial advice. Built with
+                Nigerian Naira support.
               </p>
+              <div class="project-tags">
+                <span class="tag green">React</span>
+                <span class="tag blue">Recharts</span>
+                <span class="tag pink">Claude AI</span>
+                <span class="tag">MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Mikesticks4Tech"
+                  target="_blank"
+                  class="project-link"
+                  >↗ GitHub</a
+                >
+                <span class="project-link" style="opacity: 0.5"
+                  >⬡ Coming soon</span
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills">
       <div class="section-wrap">
         <div class="section-tag">Skills</div>
         <h2 class="section-title">My tech<br />arsenal.</h2>
-
         <div class="skills-grid reveal">
           <div class="skill-group">
             <div class="skill-group-title">Frontend</div>
@@ -1214,7 +1246,7 @@
               </div>
               <div class="skill-item">
                 <div class="skill-name-row">
-                  <span class="skill-name">Tailwind CSS</span
+                  <span class="skill-name">Vite</span
                   ><span class="skill-pct">80%</span>
                 </div>
                 <div class="skill-bar">
@@ -1232,7 +1264,6 @@
               </div>
             </div>
           </div>
-
           <div class="skill-group">
             <div class="skill-group-title">Backend</div>
             <div class="skill-list">
@@ -1274,10 +1305,27 @@
               </div>
             </div>
           </div>
-
           <div class="skill-group">
-            <div class="skill-group-title">Tools & AI</div>
+            <div class="skill-group-title">Tools & Integrations</div>
             <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span class="skill-name">Paystack</span
+                  ><span class="skill-pct">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row">
+                  <span class="skill-name">Leaflet.js / Maps</span
+                  ><span class="skill-pct">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-fill" style="width: 70%"></div>
+                </div>
+              </div>
               <div class="skill-item">
                 <div class="skill-name-row">
                   <span class="skill-name">Claude AI API</span
@@ -1296,31 +1344,12 @@
                   <div class="skill-fill" style="width: 78%"></div>
                 </div>
               </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span class="skill-name">Vite</span
-                  ><span class="skill-pct">80%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-fill" style="width: 80%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-name-row">
-                  <span class="skill-name">Figma</span
-                  ><span class="skill-pct">60%</span>
-                </div>
-                <div class="skill-bar">
-                  <div class="skill-fill" style="width: 60%"></div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
       <div class="contact-inner">
         <div class="contact-left reveal">
@@ -1335,8 +1364,8 @@
             <a href="mailto:idowumichael900@gmail.com" class="contact-link">
               <div class="contact-link-icon">✉️</div>
               <div class="contact-link-text">
-                <span class="contact-link-label">Email</span>
-                <span class="contact-link-val">idowumichael900@gmail.com</span>
+                <span class="contact-link-label">Email</span
+                ><span class="contact-link-val">idowumichael900@gmail.com</span>
               </div>
             </a>
             <a
@@ -1346,8 +1375,8 @@
             >
               <div class="contact-link-icon">💼</div>
               <div class="contact-link-text">
-                <span class="contact-link-label">LinkedIn</span>
-                <span class="contact-link-val">Idowu Michael</span>
+                <span class="contact-link-label">LinkedIn</span
+                ><span class="contact-link-val">Idowu Michael</span>
               </div>
             </a>
             <a
@@ -1357,18 +1386,28 @@
             >
               <div class="contact-link-icon">🐙</div>
               <div class="contact-link-text">
-                <span class="contact-link-label">GitHub</span>
-                <span class="contact-link-val">@Mikesticks4tech</span>
+                <span class="contact-link-label">GitHub</span
+                ><span class="contact-link-val">@Mikesticks4tech</span>
+              </div>
+            </a>
+            <a
+              href="https://fiverr.com/mikesticks4tech"
+              target="_blank"
+              class="contact-link"
+            >
+              <div class="contact-link-icon">💚</div>
+              <div class="contact-link-text">
+                <span class="contact-link-label">Fiverr</span
+                ><span class="contact-link-val">mikesticks4tech</span>
               </div>
             </a>
           </div>
         </div>
-
         <div class="reveal">
           <form class="contact-form" onsubmit="handleSubmit(event)">
             <div class="form-group">
-              <label class="form-label">Your name</label>
-              <input
+              <label class="form-label">Your name</label
+              ><input
                 type="text"
                 class="form-input"
                 placeholder="John Doe"
@@ -1376,8 +1415,8 @@
               />
             </div>
             <div class="form-group">
-              <label class="form-label">Email address</label>
-              <input
+              <label class="form-label">Email address</label
+              ><input
                 type="email"
                 class="form-input"
                 placeholder="john@company.com"
@@ -1385,8 +1424,8 @@
               />
             </div>
             <div class="form-group">
-              <label class="form-label">Message</label>
-              <textarea
+              <label class="form-label">Message</label
+              ><textarea
                 class="form-textarea"
                 placeholder="Tell me about your project or opportunity..."
               ></textarea>
@@ -1399,30 +1438,26 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
       <div class="footer-left">
-        Designed & built by <span>Idowu Michael</span> · 2025
+        Designed & built by <span>Idowu Michael</span> · 2026
       </div>
       <div class="footer-right">FULL STACK DEVELOPER · NIGERIA</div>
     </footer>
 
     <script>
-      // Custom cursor
       const cursor = document.getElementById("cursor");
       const ring = document.getElementById("cursorRing");
       let mx = 0,
         my = 0,
         rx = 0,
         ry = 0;
-
       document.addEventListener("mousemove", (e) => {
         mx = e.clientX;
         my = e.clientY;
         cursor.style.left = mx + "px";
         cursor.style.top = my + "px";
       });
-
       function animateRing() {
         rx += (mx - rx) * 0.12;
         ry += (my - ry) * 0.12;
@@ -1431,7 +1466,6 @@
         requestAnimationFrame(animateRing);
       }
       animateRing();
-
       document
         .querySelectorAll("a, button, .about-card, .project-card, .skill-group")
         .forEach((el) => {
@@ -1444,8 +1478,6 @@
             ring.classList.remove("hover");
           });
         });
-
-      // Scroll reveal
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((e) => {
@@ -1457,25 +1489,6 @@
       document
         .querySelectorAll(".reveal")
         .forEach((el) => observer.observe(el));
-
-      // Skill bars animate on scroll
-      const skillObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.querySelectorAll(".skill-fill").forEach((bar) => {
-                bar.style.width = bar.style.width;
-              });
-            }
-          });
-        },
-        { threshold: 0.3 },
-      );
-      document
-        .querySelectorAll(".skills-grid")
-        .forEach((el) => skillObserver.observe(el));
-
-      // Contact form
       function handleSubmit(e) {
         e.preventDefault();
         const btn = document.getElementById("submitBtn");
@@ -1492,8 +1505,6 @@
           }, 3000);
         }, 1200);
       }
-
-      // Active nav highlight
       const sections = document.querySelectorAll("section[id]");
       const navLinks = document.querySelectorAll(".nav-links a");
       window.addEventListener("scroll", () => {
