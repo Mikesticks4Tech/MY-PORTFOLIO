@@ -580,6 +580,19 @@
         font-weight: 700;
         letter-spacing: 0.08em;
       }
+      .badge-fintech {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-family: var(--mono);
+        font-size: 10px;
+        background: var(--accent3);
+        color: var(--bg);
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
       .skills-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -915,8 +928,8 @@
         <p class="hero-desc">
           I build modern, production-ready web applications that solve real
           problems. From food delivery platforms with geolocation maps to
-          AI-powered fintech dashboards — I write code that works and ships
-          fast.
+          AI-powered fintech dashboards and secure escrow payment systems — I
+          write code that works and ships fast.
         </p>
         <div class="hero-btns">
           <a href="#projects" class="btn-primary">View my work →</a>
@@ -924,7 +937,7 @@
         </div>
         <div class="hero-stats">
           <div class="stat-item">
-            <span class="stat-num">4+</span>
+            <span class="stat-num">5+</span>
             <span class="stat-label">Projects live</span>
           </div>
           <div class="stat-item">
@@ -967,9 +980,10 @@
             </p>
             <p>
               I've shipped live products including Chopfast (a full stack food
-              delivery platform with interactive maps), a Gadget Store, a
-              Fintech app and an AI-powered finance tracker. I'm not just
-              learning the stack — I'm learning to
+              delivery platform), GadgetHub (e-commerce), FinTrack (AI-powered
+              finance tracker), and <strong>EscrowNG</strong> — a fintech
+              platform enabling secure peer-to-peer transactions between buyers
+              and sellers. I'm not just learning the stack — I'm learning to
               <strong>think like an engineer</strong>.
             </p>
             <p>
@@ -1073,6 +1087,65 @@
             <div class="badge-new">LIVE</div>
           </div>
 
+          <!-- EscrowNG -->
+          <div class="project-card featured reveal">
+            <div
+              class="project-img"
+              style="
+                background: linear-gradient(135deg, #0d1a2a 0%, #0a1f1a 100%);
+              "
+            >
+              <div class="project-img-grid"></div>
+              <div class="project-img-inner">
+                <div class="project-img-icon">🔐</div>
+                <span
+                  style="
+                    font-size: 11px;
+                    letter-spacing: 0.06em;
+                    color: var(--accent3);
+                    opacity: 0.8;
+                  "
+                  >FINTECH · ESCROW · LIVE</span
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-number">02 // Fintech</span>
+              <h3 class="project-name">EscrowNG — Secure Escrow Payments</h3>
+              <p class="project-desc">
+                A full stack fintech platform enabling secure peer-to-peer
+                transactions in Nigeria. Buyers fund escrow via Paystack; funds
+                are held until the seller delivers and the buyer confirms.
+                Features a dispute system, seller invite flow, and real-time
+                transaction status tracking.
+              </p>
+              <div class="project-tags">
+                <span class="tag green">React</span>
+                <span class="tag green">TypeScript</span>
+                <span class="tag blue">Node.js</span>
+                <span class="tag blue">MongoDB</span>
+                <span class="tag pink">Paystack</span>
+                <span class="tag">JWT Auth</span>
+                <span class="tag">Disputes</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Mikesticks4Tech"
+                  target="_blank"
+                  class="project-link"
+                  >↗ GitHub</a
+                >
+                <a
+                  href="https://escrowng.vercel.app/"
+                  target="_blank"
+                  class="project-link"
+                  >⬡ Live Demo</a
+                >
+              </div>
+            </div>
+            <div class="badge-fintech">NEW</div>
+          </div>
+
           <!-- Gadget Store -->
           <div class="project-card reveal">
             <div class="project-img" style="height: 200px">
@@ -1091,7 +1164,7 @@
               </div>
             </div>
             <div class="project-body">
-              <span class="project-number">02</span>
+              <span class="project-number">03</span>
               <h3 class="project-name">Gadget Store — Ecommerce Platform</h3>
               <p class="project-desc">
                 A full featured gadget ecommerce store with product listings,
@@ -1139,7 +1212,7 @@
               </div>
             </div>
             <div class="project-body">
-              <span class="project-number">03</span>
+              <span class="project-number">04</span>
               <h3 class="project-name">Fintech — Financial Services App</h3>
               <p class="project-desc">
                 A modern fintech web application with user authentication,
@@ -1187,7 +1260,7 @@
               </div>
             </div>
             <div class="project-body">
-              <span class="project-number">04</span>
+              <span class="project-number">05</span>
               <h3 class="project-name">FinTrack — AI Finance Dashboard</h3>
               <p class="project-desc">
                 A personal finance tracker with AI-powered insights from Claude
@@ -1364,8 +1437,8 @@
             <a href="mailto:idowumichael900@gmail.com" class="contact-link">
               <div class="contact-link-icon">✉️</div>
               <div class="contact-link-text">
-                <span class="contact-link-label">Email</span
-                ><span class="contact-link-val">idowumichael900@gmail.com</span>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-val">idowumichael900@gmail.com</span>
               </div>
             </a>
             <a
@@ -1375,8 +1448,8 @@
             >
               <div class="contact-link-icon">💼</div>
               <div class="contact-link-text">
-                <span class="contact-link-label">LinkedIn</span
-                ><span class="contact-link-val">Idowu Michael</span>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-val">Idowu Michael</span>
               </div>
             </a>
             <a
@@ -1386,8 +1459,8 @@
             >
               <div class="contact-link-icon">🐙</div>
               <div class="contact-link-text">
-                <span class="contact-link-label">GitHub</span
-                ><span class="contact-link-val">@Mikesticks4tech</span>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-val">@Mikesticks4tech</span>
               </div>
             </a>
             <a
@@ -1397,8 +1470,8 @@
             >
               <div class="contact-link-icon">💚</div>
               <div class="contact-link-text">
-                <span class="contact-link-label">Fiverr</span
-                ><span class="contact-link-val">mikesticks4tech</span>
+                <span class="contact-link-label">Fiverr</span>
+                <span class="contact-link-val">mikesticks4tech</span>
               </div>
             </a>
           </div>
@@ -1406,8 +1479,8 @@
         <div class="reveal">
           <form class="contact-form" onsubmit="handleSubmit(event)">
             <div class="form-group">
-              <label class="form-label">Your name</label
-              ><input
+              <label class="form-label">Your name</label>
+              <input
                 type="text"
                 class="form-input"
                 placeholder="John Doe"
@@ -1415,8 +1488,8 @@
               />
             </div>
             <div class="form-group">
-              <label class="form-label">Email address</label
-              ><input
+              <label class="form-label">Email address</label>
+              <input
                 type="email"
                 class="form-input"
                 placeholder="john@company.com"
@@ -1424,8 +1497,8 @@
               />
             </div>
             <div class="form-group">
-              <label class="form-label">Message</label
-              ><textarea
+              <label class="form-label">Message</label>
+              <textarea
                 class="form-textarea"
                 placeholder="Tell me about your project or opportunity..."
               ></textarea>
