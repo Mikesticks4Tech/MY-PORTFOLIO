@@ -593,6 +593,19 @@
         font-weight: 700;
         letter-spacing: 0.08em;
       }
+      .badge-saas {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        font-family: var(--mono);
+        font-size: 10px;
+        background: var(--accent2);
+        color: var(--bg);
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
       .skills-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -928,8 +941,8 @@
         <p class="hero-desc">
           I build modern, production-ready web applications that solve real
           problems. From food delivery platforms with geolocation maps to
-          AI-powered fintech dashboards and secure escrow payment systems — I
-          write code that works and ships fast.
+          AI-powered fintech dashboards, secure escrow systems and SaaS invoice
+          platforms — I write code that works and ships fast.
         </p>
         <div class="hero-btns">
           <a href="#projects" class="btn-primary">View my work →</a>
@@ -937,20 +950,20 @@
         </div>
         <div class="hero-stats">
           <div class="stat-item">
-            <span class="stat-num">5+</span>
-            <span class="stat-label">Projects live</span>
+            <span class="stat-num">6+</span
+            ><span class="stat-label">Projects live</span>
           </div>
           <div class="stat-item">
-            <span class="stat-num">AI</span>
-            <span class="stat-label">Integrated apps</span>
+            <span class="stat-num">AI</span
+            ><span class="stat-label">Integrated apps</span>
           </div>
           <div class="stat-item">
-            <span class="stat-num">NG</span>
-            <span class="stat-label">Based in Nigeria</span>
+            <span class="stat-num">NG</span
+            ><span class="stat-label">Based in Nigeria</span>
           </div>
           <div class="stat-item">
-            <span class="stat-num">∞</span>
-            <span class="stat-label">Open to remote</span>
+            <span class="stat-num">∞</span
+            ><span class="stat-label">Open to remote</span>
           </div>
         </div>
         <div class="scroll-hint">↓ scroll to explore</div>
@@ -981,10 +994,11 @@
             <p>
               I've shipped live products including Chopfast (a full stack food
               delivery platform), GadgetHub (e-commerce), FinTrack (AI-powered
-              finance tracker), and <strong>EscrowNG</strong> — a fintech
-              platform enabling secure peer-to-peer transactions between buyers
-              and sellers. I'm not just learning the stack — I'm learning to
-              <strong>think like an engineer</strong>.
+              finance tracker), <strong>EscrowNG</strong> — a fintech platform
+              for secure peer-to-peer transactions, and
+              <strong>InvoiceNG</strong> — a SaaS invoice and payment platform
+              for Nigerian freelancers. I'm not just learning the stack — I'm
+              learning to <strong>think like an engineer</strong>.
             </p>
             <p>
               I'm actively seeking
@@ -1033,7 +1047,7 @@
         <div class="section-tag">Projects</div>
         <h2 class="section-title">Things I've<br />built & shipped.</h2>
         <div class="projects-grid">
-          <!-- Featured: Chopfast -->
+          <!-- Chopfast -->
           <div class="project-card featured reveal">
             <div class="project-img">
               <div class="project-img-grid"></div>
@@ -1061,13 +1075,13 @@
                 cart management and order tracking.
               </p>
               <div class="project-tags">
-                <span class="tag green">React</span>
-                <span class="tag green">TypeScript</span>
-                <span class="tag blue">Node.js</span>
-                <span class="tag blue">MongoDB</span>
-                <span class="tag pink">Paystack</span>
-                <span class="tag">Leaflet.js</span>
-                <span class="tag">JWT Auth</span>
+                <span class="tag green">React</span
+                ><span class="tag green">TypeScript</span
+                ><span class="tag blue">Node.js</span
+                ><span class="tag blue">MongoDB</span
+                ><span class="tag pink">Paystack</span
+                ><span class="tag">Leaflet.js</span
+                ><span class="tag">JWT Auth</span>
               </div>
               <div class="project-links">
                 <a
@@ -1120,17 +1134,17 @@
                 transaction status tracking.
               </p>
               <div class="project-tags">
-                <span class="tag green">React</span>
-                <span class="tag green">TypeScript</span>
-                <span class="tag blue">Node.js</span>
-                <span class="tag blue">MongoDB</span>
-                <span class="tag pink">Paystack</span>
-                <span class="tag">JWT Auth</span>
-                <span class="tag">Disputes</span>
+                <span class="tag green">React</span
+                ><span class="tag green">TypeScript</span
+                ><span class="tag blue">Node.js</span
+                ><span class="tag blue">MongoDB</span
+                ><span class="tag pink">Paystack</span
+                ><span class="tag">JWT Auth</span
+                ><span class="tag">Disputes</span>
               </div>
               <div class="project-links">
                 <a
-                  href="https://github.com/Mikesticks4Tech"
+                  href="https://github.com/Mikesticks4Tech/escrowng"
                   target="_blank"
                   class="project-link"
                   >↗ GitHub</a
@@ -1144,6 +1158,67 @@
               </div>
             </div>
             <div class="badge-fintech">NEW</div>
+          </div>
+
+          <!-- InvoiceNG -->
+          <div class="project-card featured reveal">
+            <div
+              class="project-img"
+              style="
+                background: linear-gradient(135deg, #0a1628 0%, #150a28 100%);
+              "
+            >
+              <div class="project-img-grid"></div>
+              <div class="project-img-inner">
+                <div class="project-img-icon">📄</div>
+                <span
+                  style="
+                    font-size: 11px;
+                    letter-spacing: 0.06em;
+                    color: var(--accent2);
+                    opacity: 0.8;
+                  "
+                  >SAAS · INVOICE · LIVE</span
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-number">03 // SaaS</span>
+              <h3 class="project-name">
+                InvoiceNG — SaaS Invoice & Payment Platform
+              </h3>
+              <p class="project-desc">
+                A full stack SaaS platform for Nigerian freelancers to create
+                professional invoices, send them to clients via automated email,
+                and collect payments via Paystack. Features client management,
+                revenue dashboard with charts, automatic payment verification,
+                and real-time invoice status tracking.
+              </p>
+              <div class="project-tags">
+                <span class="tag green">React</span
+                ><span class="tag green">TypeScript</span
+                ><span class="tag blue">Node.js</span
+                ><span class="tag blue">MongoDB</span
+                ><span class="tag pink">Paystack</span
+                ><span class="tag">Resend</span
+                ><span class="tag">Recharts</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Mikesticks4Tech/InvoiceNG"
+                  target="_blank"
+                  class="project-link"
+                  >↗ GitHub</a
+                >
+                <a
+                  href="https://invoice-ng-olive.vercel.app"
+                  target="_blank"
+                  class="project-link"
+                  >⬡ Live Demo</a
+                >
+              </div>
+            </div>
+            <div class="badge-saas">NEW</div>
           </div>
 
           <!-- Gadget Store -->
@@ -1164,7 +1239,7 @@
               </div>
             </div>
             <div class="project-body">
-              <span class="project-number">03</span>
+              <span class="project-number">04</span>
               <h3 class="project-name">Gadget Store — Ecommerce Platform</h3>
               <p class="project-desc">
                 A full featured gadget ecommerce store with product listings,
@@ -1172,10 +1247,10 @@
                 and user authentication. Clean dark UI with smooth interactions.
               </p>
               <div class="project-tags">
-                <span class="tag green">React</span>
-                <span class="tag green">TypeScript</span>
-                <span class="tag blue">Node.js</span>
-                <span class="tag">MongoDB</span>
+                <span class="tag green">React</span
+                ><span class="tag green">TypeScript</span
+                ><span class="tag blue">Node.js</span
+                ><span class="tag">MongoDB</span>
               </div>
               <div class="project-links">
                 <a
@@ -1212,7 +1287,7 @@
               </div>
             </div>
             <div class="project-body">
-              <span class="project-number">04</span>
+              <span class="project-number">05</span>
               <h3 class="project-name">Fintech — Financial Services App</h3>
               <p class="project-desc">
                 A modern fintech web application with user authentication,
@@ -1220,10 +1295,10 @@
                 professional UI optimised for financial services.
               </p>
               <div class="project-tags">
-                <span class="tag green">React</span>
-                <span class="tag blue">Node.js</span>
-                <span class="tag">MongoDB</span>
-                <span class="tag">JWT Auth</span>
+                <span class="tag green">React</span
+                ><span class="tag blue">Node.js</span
+                ><span class="tag">MongoDB</span
+                ><span class="tag">JWT Auth</span>
               </div>
               <div class="project-links">
                 <a
@@ -1255,12 +1330,12 @@
                     color: var(--accent);
                     opacity: 0.8;
                   "
-                  >FINANCE TRACKER</span
+                  >FINANCE TRACKER · LIVE</span
                 >
               </div>
             </div>
             <div class="project-body">
-              <span class="project-number">05</span>
+              <span class="project-number">06</span>
               <h3 class="project-name">FinTrack — AI Finance Dashboard</h3>
               <p class="project-desc">
                 A personal finance tracker with AI-powered insights from Claude
@@ -1269,10 +1344,10 @@
                 Nigerian Naira support.
               </p>
               <div class="project-tags">
-                <span class="tag green">React</span>
-                <span class="tag blue">Recharts</span>
-                <span class="tag pink">Claude AI</span>
-                <span class="tag">MongoDB</span>
+                <span class="tag green">React</span
+                ><span class="tag blue">Recharts</span
+                ><span class="tag pink">Claude AI</span
+                ><span class="tag">MongoDB</span>
               </div>
               <div class="project-links">
                 <a
@@ -1281,9 +1356,7 @@
                   class="project-link"
                   >↗ GitHub</a
                 >
-                <span class="project-link" style="opacity: 0.5"
-                  >⬡ Coming soon</span
-                >
+                <a href="#" target="_blank" class="project-link">⬡ Live Demo</a>
               </div>
             </div>
           </div>
@@ -1343,37 +1416,37 @@
               <div class="skill-item">
                 <div class="skill-name-row">
                   <span class="skill-name">Node.js</span
-                  ><span class="skill-pct">70%</span>
+                  ><span class="skill-pct">75%</span>
                 </div>
                 <div class="skill-bar">
-                  <div class="skill-fill" style="width: 70%"></div>
+                  <div class="skill-fill" style="width: 75%"></div>
                 </div>
               </div>
               <div class="skill-item">
                 <div class="skill-name-row">
                   <span class="skill-name">Express.js</span
-                  ><span class="skill-pct">65%</span>
+                  ><span class="skill-pct">72%</span>
                 </div>
                 <div class="skill-bar">
-                  <div class="skill-fill" style="width: 65%"></div>
+                  <div class="skill-fill" style="width: 72%"></div>
                 </div>
               </div>
               <div class="skill-item">
                 <div class="skill-name-row">
                   <span class="skill-name">MongoDB</span
-                  ><span class="skill-pct">60%</span>
+                  ><span class="skill-pct">68%</span>
                 </div>
                 <div class="skill-bar">
-                  <div class="skill-fill" style="width: 60%"></div>
+                  <div class="skill-fill" style="width: 68%"></div>
                 </div>
               </div>
               <div class="skill-item">
                 <div class="skill-name-row">
                   <span class="skill-name">REST APIs</span
-                  ><span class="skill-pct">72%</span>
+                  ><span class="skill-pct">78%</span>
                 </div>
                 <div class="skill-bar">
-                  <div class="skill-fill" style="width: 72%"></div>
+                  <div class="skill-fill" style="width: 78%"></div>
                 </div>
               </div>
             </div>
@@ -1384,15 +1457,15 @@
               <div class="skill-item">
                 <div class="skill-name-row">
                   <span class="skill-name">Paystack</span
-                  ><span class="skill-pct">75%</span>
+                  ><span class="skill-pct">80%</span>
                 </div>
                 <div class="skill-bar">
-                  <div class="skill-fill" style="width: 75%"></div>
+                  <div class="skill-fill" style="width: 80%"></div>
                 </div>
               </div>
               <div class="skill-item">
                 <div class="skill-name-row">
-                  <span class="skill-name">Leaflet.js / Maps</span
+                  <span class="skill-name">Resend Email API</span
                   ><span class="skill-pct">70%</span>
                 </div>
                 <div class="skill-bar">
@@ -1434,53 +1507,50 @@
             business.
           </p>
           <div class="contact-links">
-            <a href="mailto:idowumichael900@gmail.com" class="contact-link">
-              <div class="contact-link-icon">✉️</div>
+            <a href="mailto:idowumichael900@gmail.com" class="contact-link"
+              ><div class="contact-link-icon">✉️</div>
               <div class="contact-link-text">
-                <span class="contact-link-label">Email</span>
-                <span class="contact-link-val">idowumichael900@gmail.com</span>
-              </div>
-            </a>
+                <span class="contact-link-label">Email</span
+                ><span class="contact-link-val">idowumichael900@gmail.com</span>
+              </div></a
+            >
             <a
               href="https://www.linkedin.com/in/idowu-michael-025a01387/"
               target="_blank"
               class="contact-link"
-            >
-              <div class="contact-link-icon">💼</div>
+              ><div class="contact-link-icon">💼</div>
               <div class="contact-link-text">
-                <span class="contact-link-label">LinkedIn</span>
-                <span class="contact-link-val">Idowu Michael</span>
-              </div>
-            </a>
+                <span class="contact-link-label">LinkedIn</span
+                ><span class="contact-link-val">Idowu Michael</span>
+              </div></a
+            >
             <a
               href="https://github.com/Mikesticks4tech"
               target="_blank"
               class="contact-link"
-            >
-              <div class="contact-link-icon">🐙</div>
+              ><div class="contact-link-icon">🐙</div>
               <div class="contact-link-text">
-                <span class="contact-link-label">GitHub</span>
-                <span class="contact-link-val">@Mikesticks4tech</span>
-              </div>
-            </a>
+                <span class="contact-link-label">GitHub</span
+                ><span class="contact-link-val">@Mikesticks4tech</span>
+              </div></a
+            >
             <a
               href="https://fiverr.com/mikesticks4tech"
               target="_blank"
               class="contact-link"
-            >
-              <div class="contact-link-icon">💚</div>
+              ><div class="contact-link-icon">💚</div>
               <div class="contact-link-text">
-                <span class="contact-link-label">Fiverr</span>
-                <span class="contact-link-val">mikesticks4tech</span>
-              </div>
-            </a>
+                <span class="contact-link-label">Fiverr</span
+                ><span class="contact-link-val">mikesticks4tech</span>
+              </div></a
+            >
           </div>
         </div>
         <div class="reveal">
           <form class="contact-form" onsubmit="handleSubmit(event)">
             <div class="form-group">
-              <label class="form-label">Your name</label>
-              <input
+              <label class="form-label">Your name</label
+              ><input
                 type="text"
                 class="form-input"
                 placeholder="John Doe"
@@ -1488,8 +1558,8 @@
               />
             </div>
             <div class="form-group">
-              <label class="form-label">Email address</label>
-              <input
+              <label class="form-label">Email address</label
+              ><input
                 type="email"
                 class="form-input"
                 placeholder="john@company.com"
@@ -1497,8 +1567,8 @@
               />
             </div>
             <div class="form-group">
-              <label class="form-label">Message</label>
-              <textarea
+              <label class="form-label">Message</label
+              ><textarea
                 class="form-textarea"
                 placeholder="Tell me about your project or opportunity..."
               ></textarea>
@@ -1540,7 +1610,7 @@
       }
       animateRing();
       document
-        .querySelectorAll("a, button, .about-card, .project-card, .skill-group")
+        .querySelectorAll("a,button,.about-card,.project-card,.skill-group")
         .forEach((el) => {
           el.addEventListener("mouseenter", () => {
             cursor.classList.add("hover");
